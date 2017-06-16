@@ -1,0 +1,146 @@
+/*div {
+  border: 1px solid green;
+}*/
+
+/*Whole page styles*/
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/*Header*/
+header {
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+
+}
+nav {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+ul {
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+/*Banner*/
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  margin: 0.67rem 0;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.heading {
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 1.2;
+  padding: 0.75rem 5rem;
+}
+
+/*Services*/
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.services img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.services .paper img{
+  width: 3.5rem;
+  margin-top: -0.5rem;
+}
+
+/*Information*/
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  max-width: 10rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+/*Footer*/
+footer {
+  background-color: azure;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
