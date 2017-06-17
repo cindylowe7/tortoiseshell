@@ -1,5 +1,5 @@
 /*div {
-  border: 1px solid green;
+  border: 1px solid green
 }*/
 
 /*Whole page styles*/
@@ -29,8 +29,63 @@ header {
   background-size: cover;
   height: 30rem;
   padding-top: 1rem;
-
 }
+
+@media only screen and (max-width: 1024px) {
+  nav.container {
+    max-width: 100%;
+  }
+
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+
+  .heading {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .container {
+    max-width: 100%;
+  }
+
+  header div span {
+    display: none;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.short-menu {
+    display: block;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .heading {
+    width: 100%;
+    text-align: center;
+    margin: 9rem auto 0 auto;
+    padding: 0 1rem;
+  }
+
+  .heading h1 {
+    font-size: 1rem;
+  }
+}
+
 nav {
   background-color: cadetblue;
   color: white;
@@ -47,6 +102,7 @@ nav div {
   align-items: center;
 }
 
+
 nav img {
   height: 1.5rem;
   margin-left: 2rem;
@@ -62,13 +118,14 @@ ul li {
   padding: 0 1rem;
 }
 
+.short-menu {
+  display: none;
+}
+
 /*Banner*/
 h1 {
   font-weight: bold;
   font-size: 2rem;
-  line-height: 1.2;
-  padding: 1.5rem 5rem;
-  background-color: white;
   margin: 0.67rem 0;
 }
 
@@ -80,8 +137,8 @@ header .flex {
   display: inline-block;
   margin-top: 10rem;
   margin-right: -2rem;
-  line-height: 1.2;
   padding: 0.75rem 5rem;
+  background-color: white;
 }
 
 /*Services*/
@@ -111,6 +168,23 @@ header .flex {
   margin-top: -0.5rem;
 }
 
+@media only screen and (max-width: 560px) {
+  .supporting {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .services {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+}
+
 /*Information*/
 .info {
   width: 35%;
@@ -131,6 +205,23 @@ header .flex {
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 560px) {
+  .info {
+    width: auto;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: 0.77rem;
+  }
+}
+
 /*Footer*/
 footer {
   background-color: azure;
@@ -143,4 +234,14 @@ footer img {
   height: 1.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  footer div {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
 }
